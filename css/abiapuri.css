@@ -24,8 +24,15 @@
     width: 60%; 
     opacity: 1; 
     height: 80%; 
-    z-index: 10; 
+    z-index: 30; 
+    padding: 1em;
     background: #FFF;
+}
+
+td.APURI .edit-exam {
+    margin-top: 4px;
+    border-color: #3E7800;
+    background-color: #C2FF81;
 }
 
 button.APURI {
@@ -82,8 +89,8 @@ div.banner-left::after {
 #APURI_delayd {
     height: 4em;
     background-color: #C2FF81;
-background-color: #C2FF81E6;
-color: #3E7800;
+    /*background-color: #C2FF81E6;*/
+    color: #3E7800;
 border: 3px solid #3E7800;
     z-index: 20;
     position: fixed;
@@ -127,4 +134,15 @@ border: 3px solid #3E7800;
 }
 #APURI_delayd.clearup {
   animation: moveup 1s ease-in forwards;
+}
+
+#footer div.content {
+    margin-bottom: 0 !important;
+}
+
+#APURI_footer {
+    color: #3E7800;
+}
+#APURI_footer a {
+    text-decoration: underline;
 }
