@@ -56,7 +56,7 @@ CKEDITOR.dialog.add('abittiimgDialog', function(editor) {
 			{
 				type: 'html',
 				id: 'info',
-				html: '<p>Valitse liitetiedosto listasta hiirellä. Tarvittaessa nimeä linkki ja paina ok</p>'
+				html: '<p>Valitse liitetiedosto listasta hiirell�. Tarvittaessa nime� linkki ja paina ok</p>'
 			},
 			{
 					type: 'html',
@@ -113,12 +113,12 @@ CKEDITOR.dialog.add('abittiimgDialog', function(editor) {
 					type: 'text',
 					id: 'filename',
 					label: 'Liitetiedoston nimi',
-					validate: CKEDITOR.dialog.validate.notEmpty("Linkki ei voi olla tyhjä")
+					validate: CKEDITOR.dialog.validate.notEmpty("Linkki ei voi olla tyhj�")
 				},{
 					type: 'text',
 					id: 'mime',
 					label: 'MimeType',
-					validate: CKEDITOR.dialog.validate.notEmpty("MimeType ei saa olla tyhjä. Valitse liitetiedosto listasta, jolloin MimeType täydentyy.")
+					validate: CKEDITOR.dialog.validate.notEmpty("MimeType ei saa olla tyhj�. Valitse liitetiedosto listasta, jolloin MimeType t�ydentyy.")
 				}
 				
 			]
@@ -164,6 +164,7 @@ CKEDITOR.dialog.add('abittiimgDialog', function(editor) {
 				sourcetag.appendTo(tag);*/
 			} else {
 				tag = editor.document.createElement('a');
+                                tag.setAttribute('target', '_blank');
 				tag.setAttribute('href', linkAddress);
                                 tag.setAttribute('data-cke-saved-href',linkAddress);
 				tag.appendText(altText);
